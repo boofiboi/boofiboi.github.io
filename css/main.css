@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+
+h1{
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:15px;
+}
+
+body{
+    background-color:black;
+}
+
+.maindiv{
+    background-color:white;
+    border-radius:30px;
+    width:600px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+opacity:0.8;
+}
+
+a{
+font-family: 'Montserrat', 'sans-serif';
+font-weight:bold;
+}
+.avatarimg{
+border-radius:50%;
+width:200px;
+margin-bottom:-20px;
+margin-top:20px;
+}
+
+.logos{
+display:flex;
+}
+.gitlogo{
+object-fit:fill;
+width:40px;
+height:40px;
+margin-right:10px;
+}
+
+.osulogo{
+width:40px;
+height:40px;
+object-fit:fill;
+}
+
+.avatar{
+margin-top:20px;
+margin-left:60px;
+}
+
+.center{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%)
+}
