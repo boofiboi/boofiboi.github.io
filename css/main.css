@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
 
 
 h1{
@@ -17,9 +17,11 @@ body{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 1);
+  opacity:0.6;
   color: black;
   text-align: center;
+  font-family: 'Besley', serif;
   
 }
 .maindiv{
@@ -30,7 +32,8 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-opacity:0.8;
+opacity:1;
+z-index:1;
 }
 
 
