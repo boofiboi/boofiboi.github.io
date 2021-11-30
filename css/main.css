@@ -10,8 +10,18 @@ h1{
 
 body{
     background-color:black;
+    overflow:hidden;
 }
-
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  text-align: center;
+  
+}
 .maindiv{
     background-color:white;
     border-radius:30px;
@@ -22,6 +32,7 @@ body{
     align-items:center;
 opacity:0.8;
 }
+
 
 a{
 font-family: 'Montserrat', 'sans-serif';
