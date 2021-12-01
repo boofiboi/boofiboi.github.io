@@ -11,101 +11,15 @@
     <script>
     let d = new Date()
 	    let day = d.getDate();
-	    let month = d.getMonth() + 1;
+	    let month = d.getMonth();
 	    let year = d.getFullYear();         
 window.addEventListener('load', function () {
 		    $("#date").text("Today's date is: " + day + "." + month + "." + year);
+					    }
 })
     </script>
 </head>
-<body>
-<div class="snow" id="snow"/>
-<style>
-.editor-stage .snow {
-  height:50px;
-  background: #fff;
-}
-.snow{
-  position:fixed;
-  pointer-events:none;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  height:100vh;
-  background: none;
-  background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
-  z-index:-1;
-  -webkit-animation: snow 10s linear infinite;
-  -moz-animation: snow 10s linear infinite;
-  -ms-animation: snow 10s linear infinite;
-  animation: snow 10s linear infinite;
-}
-@keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-@-moz-keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
-}
-@-webkit-keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-  @-<div class="snow" />
-<style>
-.editor-stage .snow {
-	  height:50px;
-	    background: #fff;
-}
-  .snow{
-	    position:fixed;
-	      pointer-events:none;
-	        top:0;
-		  left:0;
-		    right:0;
-		      bottom:0;
-		        height:100vh;
-			  background: none;
-			    background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
-			      z-index:100;
-			        -webkit-animation: snow 10s linear infinite;
-				  -moz-animation: snow 10s linear infinite;
-				    -ms-animation: snow 10s linear infinite;
-				      animation: snow 10s linear infinite;
-  }
-  @keyframes snow {
-	    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-	      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-	        100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-  }
-  @-moz-keyframes snow {
-	    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-	      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-	        100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
-  }
-  @-webkit-keyframes snow {
-	    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-	      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-	        100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-  }
-  @-ms-keyframes snow {
-	    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-	      50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-	        100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-  }
-</style>
-<p>ms-keyframes snow {
-  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
-  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
-  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}
-</style>
-<p>
+<body>  
 	<div class="center maindiv">
         <img class="avatarimg" src="https://cdn.discordapp.com/avatars/784101881567379456/2a757c75b91d5570f520c21d1dcb9f81.png" alt="pfp">
             <h1>boofi</h1>
