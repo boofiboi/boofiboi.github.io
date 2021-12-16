@@ -1,61 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 
 
-h1{
-    color:black;
-    font-family: 'Montserrat', sans-serif;
-    margin-left:15px;
+h1 {
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 15px;
+    position: relative;
 }
 
-body{
-    background-image:url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Woodstock-Wolcott-snowy-night.jpeg");
-    overflow:hidden;
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Woodstock-Wolcott-snowy-night.jpeg");
+    overflow: hidden;
 }
+
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 1);
-  opacity:0.6;
-  color: black;
-  text-align: center;
-  font-family: 'Besley', serif;
-  
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0.6;
+    color: black;
+    text-align: center;
+    font-family: 'Besley', serif;
+
 }
-.maindiv{
-    background-color:white;
-    border-radius:30px;
-    width:600px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-opacity:1;
-z-index:1;
+
+h1::before,
+h1::after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+h1::before {
+    background: white;
+    animation: typewrite 1s steps(5) forwards;
 }
 
 
-a{
-font-family: 'Montserrat', 'sans-serif';
-font-weight:bold;
-}
-.avatarimg{
-border-radius:50%;
-width:200px;
-margin-bottom:-20px;
-margin-top:20px;
+@keyframes blink {
+    to {
+        background: white;
+    }
 }
 
-.logos{
-display:flex;
+@keyframes typewrite {
+    to {
+        left: 100%;
+    }
 }
-.gitlogo{
-object-fit:fill;
-width:40px;
-height:40px;
-margin-right:10px;
+
+.maindiv {
+    background-color: white;
+    border-radius: 30px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+a {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.typea::before,
+.typea::after {
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+a:before {
+    background: white;
+    animation: typewrite 2s steps(14) forwards;
+}
+
+.avatarimg {
+    border-radius: 50%;
+    width: 200px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+
+.logos {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.gitlogo {
+    object-fit: fill;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
 }
 
 .osulogo{
