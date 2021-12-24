@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#55bbee" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/pfp.js"></script>
     <title>boofi</title>
 </head>
 <body>  
@@ -18,13 +19,20 @@
    <a href="https://github.com/boofiboi">
 	   <img class="gitlogo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg">
    </a>
-   <a href="https://osu.ppy.sh/u/BoofMonke">
-	   <img class="osulogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSInezRCJ7Y5DiHBvUGKpuvlBKzlo7RiQ2A&usqp=CAU">
-   </a>
-	    </div>
-</div>
-<div class="footer">
-	<p id=>&#169; boofi 2021-2022</p>
-</div>
+            <a href="https://osu.ppy.sh/u/BoofMonke">
+                <img class="osulogo"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSInezRCJ7Y5DiHBvUGKpuvlBKzlo7RiQ2A&usqp=CAU">
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <p id=>&#169; boofi 2021-2022</p>
+    </div>
 </body>
+<!--- wait for body load, then call function to load pfp -->
+<script>
+    $(document).ready(function () {
+        pfp();
+    });
+</script>
 </html>
