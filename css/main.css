@@ -8,10 +8,11 @@ h1 {
     font-family: 'Source Code Pro', monospace;
     margin-left: 15px;
     position: relative;
+    cursor: pointer;
 }
 
 body {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b3/Woodstock-Wolcott-snowy-night.jpeg");
+    background-color: black;
     overflow: hidden;
 }
 
@@ -40,7 +41,7 @@ h1::after {
 
 h1::before {
     background: white;
-    animation: typewrite 1s steps(5) forwards;
+    animation: typewrite 3s steps(18) forwards;
 }
 
 
@@ -96,6 +97,7 @@ a:before {
     width: 200px;
     margin-bottom: -20px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .logos {
