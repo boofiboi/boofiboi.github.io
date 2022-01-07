@@ -41,7 +41,7 @@ h1::after {
 
 h1::before {
     background: white;
-    animation: typewrite 3s steps(18) forwards;
+    animation: typewrite 3s steps(10) forwards;
 }
 
 
