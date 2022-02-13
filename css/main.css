@@ -9,8 +9,13 @@ h1 {
     margin-left: 15px;
     position: relative;
     cursor: pointer;
+    animation: smooth 1s ease-in forwards;
+    opacity:0;
 }
 
+.usernameh1{
+    animation: smooth 1s ease-in forwards;
+}
 body {
     background-color: black;
     overflow: hidden;
@@ -25,10 +30,10 @@ body {
     opacity: 0.6;
     color: black;
     text-align: center;
-    font-family: 'Besley', serif;
+    font-family: 'Comic Sans MS', serif;
 
 }
-
+/*
 h1::before,
 h1::after {
     content: '';
@@ -43,7 +48,12 @@ h1::before {
     background: white;
     animation: typewrite 3s steps(10) forwards;
 }
-
+*/
+@keyframes smooth {
+    to {
+        opacity: 1;
+    }
+}
 
 @keyframes blink {
     to {
@@ -60,13 +70,14 @@ h1::before {
 .maindiv {
     background-color: white;
     border-radius: 30px;
-    width: 600px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     opacity: 1;
     z-index: 1;
+    box-shadow: 0px 0px 20px white;
 }
 
 
@@ -75,8 +86,10 @@ a {
     font-weight: bold;
     position: relative;
     font-size: 1.2rem;
+    opacity:0;
+    animation: smooth 1s ease-in forwards;
 }
-
+/*
 .typea::before,
 .typea::after {
     content: '';
@@ -91,15 +104,22 @@ a:before {
     background: white;
     animation: typewrite 2s steps(14) forwards;
 }
-
+*/
 .avatarimg {
     border-radius: 50%;
     width: 200px;
     margin-bottom: -20px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
-}
+    opacity:0;
+    animation: smooth 1s ease-in forwards;
 
+}
+@keyframes fadein{
+    to{
+        margin-top:10px;
+    }
+}
 .logos {
     display: flex;
     margin-top: 1rem;
@@ -113,14 +133,14 @@ a:before {
 }
 
 .osulogo{
-width:40px;
-height:40px;
-object-fit:fill;
+    width:40px;
+    height:40px;
+    object-fit:fill;
 }
 
 .avatar{
-margin-top:20px;
-margin-left:60px;
+    margin-top:20px;
+    margin-left:60px;
 }
 
 .center{
