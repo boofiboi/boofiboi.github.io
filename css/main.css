@@ -1,126 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
-
-h1 {
-    color: black;
-    font-family: 'Source Code Pro', monospace;
-    margin-left: 15px;
-    position: relative;
-    animation: smooth 1s ease-in forwards;
-    opacity:0;
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
-.usernameh1{
-    animation: smooth 1s ease-in forwards;
-}
 body {
     background-color: black;
-    overflow: hidden;
 }
 
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    opacity: 0.6;
-    color: black;
-    text-align: center;
-    font-family: 'Comic Sans MS', serif;
-
-}
-/*
-h1::before,
-h1::after {
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-}
-
-h1::before {
-    background: white;
-    animation: typewrite 3s steps(10) forwards;
-}
-*/
-@keyframes smooth {
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes blink {
-    to {
-        background: white;
-    }
-}
-
-@keyframes typewrite {
-    to {
-        left: 100%;
-    }
-}
-
-.maindiv {
-    background-color: white;
-    border-radius: 30px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    z-index: 1;
-    box-shadow: 0px 0px 20px white;
-}
-
-
-a {
-    font-family: 'Source Code Pro', monospace;
-    font-weight: bold;
-    position: relative;
-    font-size: 1.2rem;
-    opacity:0;
-    animation: smooth 1s ease-in forwards;
-}
-/*
-.typea::before,
-.typea::after {
-    content: '';
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-}
-
-a:before {
-    background: white;
-    animation: typewrite 2s steps(14) forwards;
-}
-*/
-.avatarimg {
-    border-radius: 50%;
-    width: 200px;
-    margin-bottom: -20px;
-    margin-top: 10px;
-    opacity:0;
-    animation: smooth 1s ease-in forwards;
-
-}
-@keyframes fadein{
-    to{
-        margin-top:10px;
-    }
-}
 .logos {
     display: flex;
     margin-top: 1rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
 }
 
 .gitlogo {
@@ -130,20 +29,185 @@ a:before {
     margin-right: 10px;
 }
 
-.osulogo{
-    width:40px;
-    height:40px;
-    object-fit:fill;
+.osulogo {
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
 }
 
-.avatar{
-    margin-top:20px;
-    margin-left:60px;
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+    animation: normal 4s blurup;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    filter: blur(10px) brightness(0.3)
 }
 
-.center{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50% , -50%)
+@keyframes blurup {
+    from {
+        filter: blur(0px) brightness(1);
+
+    }
+    to {
+        filter: blur(10px) brightness(0.3);
+    }
 }
+
+@media screen and (max-width: 550px) {
+    .name {
+        font-size: 40vw;
+        letter-spacing: 2vw;
+        font-family: 'Staatliches', cursive;
+        z-index: 99;
+        cursor: pointer;
+        animation-play-state: paused;
+        font-weight: 100;
+        opacity: 1;
+    }
+
+    .infotext {
+        font-size: 6vw;
+        font-family: 'Poiret One', cursive;
+        border-radius: 200px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+
+    }
+
+    .infodiv {
+        border-radius: 20px;
+        width: 75vw;
+        height: auto;
+        text-align: center;
+        z-index: -1;
+        opacity: 0;
+        background-color: white;
+        animation: normal 3s down;
+        animation-play-state: paused;
+        top: 0vh;
+        animation-iteration-count: 1
+    }
+
+    .discord {
+        position: absolute;
+        top: 21vh;
+        left: 55vw;
+        font-size: 15px;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+    }
+}
+
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacitydown {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+
+}
+
+@keyframes down {
+    0% {
+        top: -70vh;
+    }
+    70% {
+        top: 10vh;
+    }
+    100% {
+        top: 0vh;
+    }
+}
+
+
+@keyframes rgbcolors {
+    0% {
+        -webkit-text-stroke: 3px rgb(255, 0, 0);
+        text-shadow: 0px 0px 20px red;
+    }
+    25% {
+        -webkit-text-stroke: 3px rgb(144, 238, 144);
+        text-shadow:0px 0px 20px lightgreen;
+    }
+    50% {
+        -webkit-text-stroke: 3px rgb(0, 0, 255);
+        text-shadow: 0px 0px 20px  blue;
+    }
+    75% {
+        -webkit-text-stroke: 3px rgb(144, 238, 144);
+        text-shadow: 0px 0px 20px lightgreen;
+    }
+    100% {
+        -webkit-text-stroke: 3px rgb(255, 0, 0);
+        text-shadow: 0px 0px 20px red;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .name {
+        font-size: 20vw;
+        letter-spacing: 2vw;
+        font-family: 'Staatliches', cursive;
+        z-index: 99;
+        cursor: pointer;
+        animation: infinite 5s rgbcolors;
+        font-weight: 100;
+        opacity: 1;
+    }
+
+    .infotext {
+        font-size: 2vw;
+        font-family: 'Poiret One', cursive;
+        border-radius: 200px;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        user-select: none;
+
+    }
+
+    .infodiv {
+        border-radius: 20px;
+        width: 75vw;
+        height: auto;
+        text-align: center;
+        z-index: -1;
+        opacity: 0;
+        background-color: white;
+        animation: normal 3s down;
+        animation-play-state: paused;
+        top: 0vh;
+        animation-iteration-count: 1;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .discord {
+        position: absolute;
+        top: 15vh;
+        left: 67vw;
+        font-size: 20px;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+ 
+
+ 
+  
+ 

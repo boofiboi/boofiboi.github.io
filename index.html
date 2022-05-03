@@ -1,38 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta property="og:title" content="Boofi's site" />
-    <meta property="og:site_name" content="boofiboi" />
-    <meta property="og:description" content="Small site I made so you know who I am!" />
-    <meta name="theme-color" content="#55bbee" />
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/pfp.js"></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="boofi!!!!" property="og:title"/>
+    <meta content="boofiboi.me" property="og:site_name"/>
+    <meta content="#55bbee" name="theme-color"/>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/pfp.js" type="text/javascript"></script>
     <title>boofi</title>
 </head>
-<body>  
-	<div class="center maindiv">
-        <img alt="pfp" class="avatarimg" src="https://cdn.discordapp.com/avatars/784101881567379456/7cdac7ff768f4cd1f8eeca124d521d61.png?size=1024">
-        <h1 id="usernameh1">.</h1>
-        <a class="typea">Web developer.</a>
+<!---useless fucking video used for the fucking background GOD I HATE HTML AND CSS-->
+<!---also bhop i swear on god if you steal this one u a bitch and i will be contacting my lawyers-->
+<video autoplay class="myVideo" loop muted>
+    <source src="m1.mp4" type="video/mp4">
+</video>
+
+<div class="maindiv center">
+    <div class="namebg">
+        <h1 class="name" onclick="showinfo()">
+            boofi
+        </h1>
+    </div>
+
+
+    <div class="infodiv center">
+        <h2 class="infotext">
+            I am a 15 year old boy from Czechia that is a self-taught full stack developer. <br> <br>
+            Check out my socials:
+        </h2>
         <div class="logos">
             <a href="https://github.com/boofiboi">
                 <img class="gitlogo" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg">
             </a>
-            <a href="https://osu.ppy.sh/u/BoofMonke">
+            <a href="https://instagram.com/boofiboi">
                 <img class="osulogo"
-                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbSInezRCJ7Y5DiHBvUGKpuvlBKzlo7RiQ2A&usqp=CAU">
+                     src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Feather-logos-instagram.svg">
             </a>
+
+
         </div>
+        <p class="discord" onclick="monke()">boofi#7340
+        </p>
     </div>
-    <div class="footer">
-        <p id=>&#169; boofi 2021-2022</p>
-    </div>
-</body>
-<!--- wait for body load, then call function to load pfp -->
-<script>
-    $(document).ready(function () {
-        pfp();
-    });
-</script>
+    </body>
+    <!--- wait for body load, then call function to load pfp -->
 </html>
