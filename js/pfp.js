@@ -1,9 +1,10 @@
-function httpGet(theUrl) {
+/* function httpGet(theUrl) {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", theUrl, false); // false for synchronous request
     xmlHttp.send(null);
     return xmlHttp.responseText;
-}
+} */
+
 
 
 // noinspection JSUnresolvedFunction
@@ -16,6 +17,37 @@ function httpGet(theUrl) {
 
 }
 */
+
+
+
+let muted = true
+let firsttime = true
+let unmute = function () {
+switch(muted){
+    case true:
+        if(firsttime == true){
+        muted = false;
+        firsttime = false;
+        document.getElementById("monkeplayer").muted = false;
+        document.getElementById("monkeplayer").play();
+        document.getElementById("monkeplayer").volume = 0.1;
+        $("img.mute").attr("src", "https://upload.wikimedia.org/wikipedia/commons/d/d5/Bw-unmuted.svg");
+        console.log("unmuted and played");
+        } else {
+            muted = false;
+            document.getElementById("monkeplayer").muted = false;
+            $("img.mute").attr("src", "https://upload.wikimedia.org/wikipedia/commons/d/d5/Bw-unmuted.svg");
+            console.log("unmuted");
+        }
+        break;
+    case false:
+        muted = true;
+        document.getElementById("monkeplayer").muted = true;
+        $("img.mute").attr("src", "mute_icon.svg");
+        console.log("muted")
+        break;}   
+}
+
 
 let showinfo = function () {
 
