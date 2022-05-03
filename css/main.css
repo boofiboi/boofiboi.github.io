@@ -166,17 +166,83 @@ body {
     position:absolute;
     top:50vh;
     left:50vh;
+
 }
 
 button{
-     width:50px;
-     height:50px;
+     width:100px;
+     height:100px;
      position: fixed;
-     top: 95%;
-     left: 0;
+     top: 60%;
+     left: 50%;
      cursor:pointer;
+     border-radius:10px;
 }
 
+.muteicon{
+    z-index:2;
+    background:white;
+    height:50px;
+    width:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    border:1px solid black;
+}
+
+.mutebutton{
+    position:fixed;
+    bottom:0;
+    left:0%;
+    padding:4px;
+    background:black;
+    z-index:3;
+    height:50px;
+    width:50px;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+}
+.mute{
+    padding:15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.mute:hover{
+    background:rgb(136, 136, 136);
+}
+.mutebg{
+position:absolute;
+top:-2.5vh;
+left:-2.5vw;
+    background: conic-gradient(
+#fd004c,
+#fe9000,
+#fff020,
+#3edf4b,
+#3363ff,
+#b102b7,
+#fd004c
+    );
+    z-index:-20;
+    animation:spin 1.5s infinite linear;
+    width:200%;
+    height:200%;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+@keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
 .mute{
     width:20px;
     height:20px;
