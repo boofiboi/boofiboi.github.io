@@ -32,3 +32,23 @@ function animate() {
 
 init();
 animate();
+
+const messagetosend = document.getElementById('messageinput');
+const form = document.querySelector('form');
+form.addEventListener('submit', handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+   const request = new XMLHttpRequest();
+      request.open("POST", "https://discordapp.com/api/webhooks/1274875071298801786/x3orWaWkOe392bynZ2tKJdIWIVOu2aFRHCZ5lJkZS7XxhCvnASCXXEMVOpPxHH0l5r-n");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "Bartosz Fan club message",
+        avatar_url: "",
+        content: messagetosend.value
+      }
+      request.send(JSON.stringify(params));
+}
