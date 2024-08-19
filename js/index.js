@@ -25,7 +25,7 @@ function onWindowResize() {
 
 function animate() {
     requestAnimationFrame(animate);
-    plane.rotation.y += 0.1;
+    plane.rotation.y += 0.005;
 
     renderer.render(scene, camera);
 }
